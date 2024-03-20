@@ -1,0 +1,137 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+    background-color: #efefef;
+}
+div{
+    /* border: 1px solid red; */
+    font-family: 'WorldClass', Arial, sans-serif;
+}
+.block{
+    width: 100%;
+    height: 100vh;
+    display: flex;  
+}
+.header{
+    width: 300px;
+    height: 100%;
+    background-color: #1c1c1d;
+    color: white;
+}
+.header img{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    top: 90vh;
+}
+.main{
+    position: fixed;
+    left: 2%;
+}
+.header li{
+    width: 100%;
+    height: 50px;
+    margin: 10px auto;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+}
+.header li:first-child{
+    margin-top: 40px;
+}
+.header a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* медиа для иконок */
+
+@media screen and (max-width:700px) {
+    .header p{
+        visibility: hidden;
+    }
+    .header{
+        width: 20em;
+    }
+    .header li{
+        background-position: center;
+    }
+    .header li:first-child{
+        color: white;
+        background-image: url('../icon/home.png');
+        background-repeat: no-repeat;
+        background-size: 50px;
+        margin-top: 40px;
+    }
+    .header li:nth-child(2){
+        color: white;
+        background-image: url('../icon/location.png');
+        background-repeat: no-repeat;
+        background-size: 50px;
+    }
+    .header li:nth-child(3){
+        color: white;
+        background-image: url('../icon/workout-top-bold.png');
+        background-repeat: no-repeat;
+        background-size: 50px;
+    }
+    .header li:nth-child(4){
+        color: white;
+        background-image: url('../icon/workout.png');
+        background-repeat: no-repeat;
+        background-size: 50px;
+    }
+}
+@media screen and (max-width: 630px) {
+    .main{
+        width: 50px;
+    }
+    .main li{
+        background-size: 30px;
+    }
+}
+
+/* контентная часть */
+/* content */
+
+.content{
+    /* border: 1px solid red; */
+    flex-grow: 1;
+}
+.conHead{
+    width: 100%;
+    height: 50px;
+    background-color: #1c1c1d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    position: fixed;
+}
+.con{
+    width: 100%;
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.conHeader{
+    width: 100%;
+    height: 50vh;
+    background-color: #656575;
+    background-image: url('../img/fone.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+}
+
+.blocks{
+    width: 100%;
+    height: 50vh;
+    background-color: #727272;
+}
