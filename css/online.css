@@ -1,0 +1,171 @@
+*{
+    margin: 0;padding: 0;
+}
+div{
+    /* border: 1px solid red; */
+    font-family: 'WorldClass', Arial, sans-seri f;
+}
+.block{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.header{
+    width: 15%;
+    background-color: #1c1c1d;
+    display: flex;
+    justify-content: center;
+}
+.header2{
+    width: 13%;
+    height: 100vh;
+    position: fixed;
+}
+.content{
+    width: 100%;
+    background-color: #fff;
+}
+.main{
+    width: 12%;
+    height: 100vh;
+    position: fixed;
+    top: 80px;
+    background-image: url('../icon/logo.png');
+    background-position: left 90%;
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+.main a{
+    text-decoration: none;
+}
+.main li{
+    width: 100%;
+    margin-bottom: 10px;
+    list-style-type: none;
+}
+.main p{
+    font-size: 30px;
+    color: #fff;
+}
+
+/* content */
+.contentHeader{
+    height: 60px;
+    width: 100%;
+    font-size: 30px;
+    color: #fff;
+    background-color: #1c1c1d;
+    position: fixed;
+    display: flex;
+    align-items: center;
+}
+.conHeadImg{
+    height: 50vh;
+    background-image: url('../img/fone.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* blocks */
+.blocks{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+
+}
+.blocks div{
+    width: 45%;
+}
+.blocks img{
+    width: 100%;
+}
+
+    /* Стили для модального окна */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4); /* Чтобы создать полупрозрачный фон */
+      }
+      
+      .modal-content {
+        background-color: #fefefe;
+        margin: 20% auto auto 15%;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 70%;
+        /* text-align: center; */
+      }
+
+@media screen and (max-width:1320px) {
+    .text p:not(:first-child):not(:last-child) {
+        display: none;
+    }
+    .blocks{
+        width: 100%;
+    }
+}
+@media screen and (max-width:1000px) {
+    .main p{
+        visibility: hidden;
+    }
+    .main li{
+        text-decoration: none;
+        list-style-type: none;
+        margin-top: 10px;
+        height: 40px;
+    }
+    .main li:first-child{
+        color: white;
+        background-image: url('../icon/home.png');
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: center;
+    }
+    .main li:nth-child(2){
+        color: white;
+        background-image: url('../icon/location.png');
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: center;
+    }
+    .main li:nth-child(3){
+        color: white;
+        background-image: url('../icon/workout-top-bold.png');
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: center;
+    }
+    .main li:nth-child(4){
+        color: white;
+        background-image: url('../icon/workout.png');
+        background-repeat: no-repeat;
+        background-size: 40px;
+        background-position: center;
+    }
+}
+@media screen and (max-width:700px) {
+    .blocks div{
+        width: 100%;
+    }
+    .blocks{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 500px) {
+    .main{
+        background-size: 70px;
+    }
+    .blocks > div {
+        width: 100%;
+    }
+}
+
